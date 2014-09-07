@@ -12,14 +12,15 @@ class ClsServerChat extends Thread
 	{
 		try
 		{
+			//InetAddress addname = InetAddress.getByName("192.168.1.95");
 			ServerSocket objServerSocket = new ServerSocket(1500);
 			System.out.println("Server connected");
 
 			while(true)
 			{
-			  System.out.println("Waiting for Client to Connect");
+			  //System.out.println("Waiting for Client to Connect");
 			  Socket client = objServerSocket.accept();
-			  System.out.println("Client connected");
+			  //System.out.println("Client connected");
 			  ChatHandler c = new ChatHandler(client,i);
 			  c.start();
 			  i++;
@@ -27,7 +28,7 @@ class ClsServerChat extends Thread
 		}
 		catch(Exception e)
 		{
-			System.out.println("Oh, well");
+			//System.out.println("Oh, well");
 		}
 	}
 }

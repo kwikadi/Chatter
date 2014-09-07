@@ -11,7 +11,7 @@ class ClsClientChat extends Thread
 	{
 		try
 		{
-			Socket objSocket = new Socket("localhost",1500);
+			Socket objSocket = new Socket("192.168.1.95",1500);
 			System.out.println("Connection established");
 			objDIS = new DataInputStream(objSocket.getInputStream());
 			objDOS = new DataOutputStream(objSocket.getOutputStream());
