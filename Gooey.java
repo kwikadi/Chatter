@@ -89,10 +89,6 @@ public class Gooey
 		fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
-	public void finiss()
-	{
-		fr.setVisible(false);
-	}
 	public void printanswer(String txt)
 	{
 		them = txt;
