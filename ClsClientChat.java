@@ -11,7 +11,7 @@ class ClsClientChat extends Thread
 	{
 		try
 		{
-			Socket objSocket = new Socket("192.168.1.95",1500); //Send request to server at given address:port
+			Socket objSocket = new Socket("localhost",1500); //Send request to server at given address:port
 			System.out.println("Connection established");
 			objDIS = new DataInputStream(objSocket.getInputStream());  //Input
 			objDOS = new DataOutputStream(objSocket.getOutputStream()); //Ouput

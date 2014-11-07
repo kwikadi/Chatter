@@ -8,7 +8,7 @@ class ChatterBegin
 {
 	public static void main(String args[])
 	{
-		try (Socket s = new Socket("192.168.1.95", 1500))   //Check for server
+		try (Socket s = new Socket("localhost", 1500))   //Check for server
 		{
 			//Server exists. Do nothing.
 		}
